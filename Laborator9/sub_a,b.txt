@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayListInteger numbers = new ArrayList();
+        Random random = new Random();
+
+        for (int i = 0; i  20; i++) {
+            numbers.add(random.nextInt(21) + 5);
+        }
+
+        int sum = numbers.stream().mapToInt(IntegerintValue).sum();
+        int max = numbers.stream().mapToInt(IntegerintValue).max().orElse(0);
+        int min = numbers.stream().mapToInt(IntegerintValue).min().orElse(0);
+
+
+        System.out.println(Lista numere );
+        numbers.forEach(System.outprintln);
+
+        System.out.println(Suma  + sum);
+        System.out.println(Maxim  + max);
+        System.out.println(Minim   + min);
+    }
+}
